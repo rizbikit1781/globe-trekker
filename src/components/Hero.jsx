@@ -41,8 +41,8 @@ const Hero = () => {
             <span className="flex items-center py-7 border-r border-gray relative pl-4">
               <MdOutlineParagliding className="text-4xl text-orange"/>
               <span className="flex flex-col justify-center absolute h-full left-16 right-2">
-                <p>Location</p>
-                <select>
+                <p className="text-gray text-sm">Location</p>
+                <select className="text-sm font-bold w-full">
                   <option>Destinations</option>
                   <option>Canada</option>
                   <option>Australia</option>
@@ -54,9 +54,9 @@ const Hero = () => {
             </span>
             <span className="flex items-center py-7 border-r border-gray relative pl-4">
                 <FaPeopleCarry className="text-4xl text-orange"/>
-                <span>
-                  <p>Type</p>
-                  <select>
+                <span className="flex flex-col justify-center absolute h-full left-16 right-2">
+                  <p className="text-gray text-sm">Type</p>
+                  <select className="text-sm font-bold w-full">
                     <option>Activity</option>
                     <option>Adventure</option>
                     <option>Island</option>
@@ -71,27 +71,27 @@ const Hero = () => {
 
               <span className="flex items-center py-7 border-r border-gray relative pl-4">
                 <WiTime3 className="text-4xl text-orange"/>
-                <span>
-                  <p>Date From</p>
-                  <input type="date" />
+                <span className="flex flex-col justify-center absolute h-full left-16 right-2">
+                  <p className="text-gray text-sm">Date From</p>
+                  <input type="date" className="text-sm font-bold w-full"/>
                 </span>
               </span>
-              <span>
+              <span className="flex items-center py-7 border-r border-gray relative pl-4">
                 <FaPeopleGroup className="text-4xl text-orange"/>
-                <span>
-                  <p>Guests</p>
-                  <input type="text" placeholder="0" />
+                <span className="flex flex-col justify-center absolute h-full left-16 right-2">
+                  <p className="text-gray text-sm">Guests</p>
+                  <input type="text" placeholder="0" className="font-semibold placeholder:text-black outline-none"/>
                 </span>
               </span>
-              <button>
-                <MdSearch size={20} className="text-4xl text-orange"/>
+              <button className="bg-orange text-white flex items-center justify-center gap-4 py-6 outline-none border-none rounded-r-lg font-semibold">
+                <MdSearch size={20}/>
                 SEARCH
               </button>
           </div>
-          <img src="/logo.png" alt="" width={30} height={30}/>
-          <p>or browse the selected type</p>
+          <img src="/logo.png" alt="" width={30} height={30} className="my-4"/>
+          <p className="text-white font-semibold text-[28px]">or browse the selected type</p>
         </div>
-        <div>
+        <div className="py-16 lg:-mt-24 relative z-10 max-w-[1200px] px-6 mx-auto">
           <Carousel
             partialVisbile={false}
             swipeable={true}
@@ -104,25 +104,25 @@ const Hero = () => {
             keyBoardControl={true}
             itemClass="carouselItem"
           > 
-            <div>
-              <GiDeer />
-              <p>Wildlife</p>
+            <div  className="shadow-xl bg-white p-8 rounded-lg flex flex-col justify-center items-center gap-4 mx-4">
+              <GiDeer className="rounded-full w-20 h-20 p-4 bg-[#e5faf5] text-[#3fd2a8] hover:bg-orange hover:text-white" />
+              <p className="font-bold">Wildlife</p>
             </div>
-            <div>
-              <MdOutlineParagliding />
-              <p>Paragliding</p>
+            <div className="shadow-xl bg-white p-8 rounded-lg flex flex-col justify-center items-center gap-4 mx-4">
+              <MdOutlineParagliding className="rounded-full w-20 h-20 p-4 bg-[#26b2ec24] text-[#06aff6] hover:bg-orange hover:text-white"/>
+              <p className="font-bold">Paragliding</p>
             </div>
-            <div>
-              <CiFlag1 />
-              <p>Adventure</p>
+            <div className="shadow-xl bg-white p-8 rounded-lg flex flex-col justify-center items-center gap-4 mx-4">
+              <CiFlag1 className="rounded-full w-20 h-20 p-4 bg-[#f5ecfd] text-[#9e60e5] hover:bg-orange hover:text-white"/>
+              <p className="font-bold">Adventure</p>
             </div>
-            <div>
-              <GiHangGlider />
-              <p>Hang Gliding</p>
+            <div className="shadow-xl bg-white p-8 rounded-lg flex flex-col justify-center items-center gap-4 mx-4">
+              <GiHangGlider className="rounded-full w-20 h-20 p-4 bg-[#fff4de] text-[#f6b23b] hover:bg-orange hover:text-white"/>
+              <p className="font-bold">Hang Gliding</p>
             </div>
-            <div>
-              <GiFishingBoat />
-              <p>Sightseeing</p>
+            <div className="shadow-xl bg-white p-8 rounded-lg flex flex-col justify-center items-center gap-4 mx-4">
+              <GiFishingBoat className="rounded-full w-20 h-20 p-4 bg-[#d036321c] text-[#d03632] hover:bg-orange hover:text-white"/>
+              <p className="font-bold">Sightseeing</p>
             </div>
           </Carousel>
         </div>
