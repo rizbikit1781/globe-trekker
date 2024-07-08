@@ -39,7 +39,7 @@ const Destination = () => {
 
   const Tours = ({ image, name }) => {
     return (
-      <div>
+      <div className="mx-4">
         <div className="relative overflow-hidden rounded-t-lg">
           <img src={image} alt="tours" className="rounded-t-lg hoverImg" />
           <div className="absolute flex justify-between top-4 left-4 right-4">
@@ -50,18 +50,18 @@ const Destination = () => {
           </div>
         </div>
 
-        <div className="border border-[#ebe6de] rounded-b-lg relative">
+        <div className="border border-[#ebe6de] rounded-b-lg relative h-[230px]">
           <div className="absolute w-full h-5 -top-5 bg-white rounded-t-[20px]">
-            <div className="p-6 pt-0">
+            <div className="p-6 pt-0 mt-4">
               <div className="flex items-center gap-4 justify-between">
                 <span className="flex justify-center">
                   {[...Array(5)].map((_, index) => (
                     <MdStar key={index} className="text-[#ffa801] text-xl"/>
                   ))}
-                  <p className="">4.6</p>
+                  <p className="text-[#757783] pl-2">4.6</p>
                 </span>
-                <span>
-                  <div>
+                <span className="flex gap-2">
+                  <div className="relative">
                     <CiCamera />
                     <button className="bg-orange text-xs rounded-full text-white w-4 h-4 flex items-center justify-center absolute top-0 right-0">5</button>
                   </div>
@@ -74,23 +74,23 @@ const Destination = () => {
                   <p className="text-[#757783] text-sm">Central Park West NY, USA</p>
               </span>
               <span className="text-[#757783] flex py-4"> 
-                  From <p>$59.00</p>
+                  From <p className="text-orange">$109.00</p>
               </span>
-              <div>
-                <span>
-                  <WiTime3 />
+              
+              <div className="bg-[#faf8f4] flex justify-between py-4 px-4">
+                <span className="flex items-center gap-2">
+                  <WiTime3 className="text-orange" /> 10 days
                 </span>
-                <span>
-                  <MdPeopleOutline />
+                <span className="flex items-center gap-2">
+                  <MdPeopleOutline className="text-orange"/> 50
                 </span>
-                <a href="#">
+                <a href="#" className="flex items-center gap-2 text-orange text-sm font-bold mt-2">
                   explore <MdArrowRightAlt />
                 </a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     )
   }
@@ -152,27 +152,27 @@ const Destination = () => {
 
       <div className="text-center my-10 px-6" data-aos="fade-down">
         <p className="text-orange text-xl pb-2">Featured tours</p>
-        <h4 className="lg:text-[50px] text-[30px] font-bold">Most popular tours</h4>
+        <h4 className="lg:text-[50px] text-[30px] font-bold mb-6">Most popular tours</h4>
         <div>
-        <Carousel
-            partialVisbile={false}
-            swipeable={true}
-            draggable={false}
-            responsive={responsive}
-            ssr={true}
-            infinite
-            autoPlay={true}
-            arrows={true}
-            keyBoardControl={true}
-            itemClass="carouselItem"
-          >
-            <Tours image="src/assets/beach.jpg" name="Party Beach in Australia"/>
-            <Tours image="src/assets/beach.jpg" name="Party Beach in Australia"/>
-            <Tours image="src/assets/beach.jpg" name="Party Beach in Australia"/>
-            <Tours image="src/assets/beach.jpg" name="Party Beach in Australia"/>
-            <Tours image="src/assets/beach.jpg" name="Party Beach in Australia"/>
+          <Carousel
+              partialVisbile={false}
+              swipeable={true}
+              draggable={false}
+              responsive={responsive}
+              ssr={true}
+              infinite
+              autoPlay={true}
+              arrows={true}
+              keyBoardControl={true}
+              itemClass="carouselItem"
+            >
+              <Tours image="src/assets/beach.jpg" name="Party Beach in Australia"/>
+              <Tours image="src/assets/hiking_iceland.jpg" name="Hiking in Iceland"/>
+              <Tours image="src/assets/market.jpg" name="Shopping market"/>
+              <Tours image="src/assets/sailing_dam.jpg" name="Sailing boat in Surathani"/>
+              <Tours image="src/assets/japan.jpg" name="Ancient Temple in Japan"/>
 
-          </Carousel> 
+            </Carousel> 
         </div>
       </div>
     </div>
