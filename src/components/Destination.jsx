@@ -101,12 +101,12 @@ const Destination = () => {
         <p className="text-orange text-xl">Destination Lists</p>
         <h4 className="font-bold lg:text-[50px] text-[30px] py-4">Go exotic places</h4>
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-2">
-          <Places country='Thailand' image="src/assets/thailand.jpg" tours='4' column='1' />
+          <Places country='Thailand' image="src/assets/thailand.jpeg" tours='4' column='1' />
           <Places country='Singapore' image="src/assets/singapore.jpg" tours='6' column='2' />
           <Places country='Canada' image="src/assets/canada.jpg" tours='3' column='1' />
           <Places country='France' image="src/assets/france.jpg" tours='2' column='2' />
           <Places country='Denmark' image="src/assets/denmark.jpg" tours='5' column='2' />
-          <Places country='New Zealand' image="src/assets/newzealand.jpg" tours='9' column='2' />
+          <Places country='New Zealand' image="src/assets/newzealand.webp" tours='9' column='2' />
           <Places country='Australia' image="src/assets/australia.jpg" tours='7' column='1' />
           <Places country='Italy' image="src/assets/italy.jpg" tours='4' column='2' />
 

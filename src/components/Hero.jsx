@@ -34,7 +34,7 @@ const Hero = () => {
             <source src="/video.webm" type="video/webm" />
         </video>
         <div className="flex flex-col items-center justify-center relative z-10 lg:h-full h-screen max-w-[1200px] px-6 lg:pt-0 pt-16 mx-auto"> 
-          <p className="text-3xl text-orange">Let's explore</p>
+          <p className="text-3xl text-orange mb-6">Let's explore</p>
           <h4 className="lg:text-[52px] text-3xl text-white">Where Would You Like To Go?</h4>
           <p className="text-gray text-2xl my-8">Checkout Beautiful Places Around the world.</p>
           <div className="bg-white grid lg:grid-cols-5 grid-cols-1 rounded-lg w-full">
