@@ -27,3 +27,8 @@
 .transition-bg {
   transition: 0.5s all ease-in-out;
 }
+
+.hoverBtn:hover {
+  background-color: black;
+  color: white;
+}
