@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Benefit from "./components/Benefit"
 import Destination from "./components/Destination"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Review from "./components/Review"
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Review />
       <Benefit />
+      <Footer />
     </>
   )
 }
