@@ -28,35 +28,25 @@ const Benefit = () => {
 
     const Card = ({ image, text }) => {
         return (
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div className="m-4 border border-[#ebe6de] rounded-lg overflow-hidden">
                 <div className="relative">
-                    <img src={image} alt={text} className="w-full h-48 object-cover" />
-                    <p className="absolute bottom-0 left-0 bg-orange-500 text-white px-3 py-1 rounded-tr-lg">
-                        <span className="text-lg font-bold">10</span>{" "}
-                        <span className="text-xs font-normal">JULY</span>
+                    <img src={image} alt={text} className="w-full" />
+                    <p className="absolute bottom-2 right-2 bg-orange px-2 py-2 rounded-md text-white">
+                        10 <span className='font-normal text-xs'>JULY</span>
                     </p>
                 </div>
-                <div className="border border-gray-200 rounded-b-lg relative">
-                    <div className="absolute w-full h-5 -top-5 bg-white rounded-t-[20px]"></div>
-                    <div className="p-6">
-                        <div className="flex items-center gap-4 text-gray-500 mb-3">
-                            <span className="flex items-center gap-1 text-xs">
-                                <MdPerson className="text-orange-500" /> ADMIN
-                            </span>
-                            <span className="flex items-center gap-1 text-xs">
-                                <MdComment className="text-orange-500" /> 0 COMMENTS
-                            </span>
-                        </div>
-                        <h4 className="text-xl font-semibold py-2 text-gray-800 hover:text-orange-500 transition-colors duration-300">
-                            {text}
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                            There are many variations of but the majority have simply free text available not suffered
-                        </p>
-                        <a href="#" className="inline-flex items-center text-orange-500 hover:text-orange-600 transition-colors duration-300">
-                            Read More <MdArrowRight className="ml-1" />
-                        </a>
+                <div className='p-4'>
+                    <div className='flex items-center gap-4'>
+                        <span className='flex items-center gap-1 text-xs'>
+                            <MdPerson /> ADMIN
+                        </span>
+                        <span className='flex items-center gap-1 text-xs'>
+                            <MdComment /> 0 COMMENTS
+                        </span>
                     </div>
+                    <h4 className='text-2xl font-semibold py-2 hover:text-orange-500'>{text}</h4>
+                    <p className='pt-2 leading-8'>There are many variations of but the majority have simply free text available not suffered</p>
+                    <a href='#' className="flex items-center text-orange-500 hover:underline">Read More <MdArrowRight /></a>
                 </div>
             </div>
         )
@@ -64,12 +54,12 @@ const Benefit = () => {
 
   return (
         <div className="bg-white">
-            <div className="container mx-auto px-4 py-16 lg:py-16 bg-[url(/bg-1.webp)] bg-cover bg-center bg-no-repeat bg-opacity-80">
+            <div className="mx-auto bg-[url(/bg-1.webp)] bg-cover bg-center bg-no-repeat">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-1/2">
-                        <img src="src/assets/hiking_iceland.jpg" alt="Benefit" className="rounded-lg shadow-xl w-full h-auto" />
+                        <img src="src/assets/italy.jpg" alt="Benefit" className="shadow-xl w-full h-auto" />
                     </div>
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2 lg:p-0 p-10">
                         <p className="text-orange font-semibold mb-2">Our benefit lists</p>
                         <h4 className="text-3xl lg:text-4xl font-bold text-white mb-6">Why Choose Globe Trekker</h4>
                         <p className="text-gray mb-8">
@@ -81,17 +71,17 @@ const Benefit = () => {
                                     <RiFlightTakeoffFill />
                                 </span>
                                 <div>
-                                    <h6 className="text-xl font-semibold text-gray-800 mb-2">Professional and Certificated</h6>
+                                    <h6 className="text-xl font-semibold text-orange mb-2">Professional and Certificated</h6>
                                     <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iste quidem nesciunt vel excepturi qui illum fugiat unde debitis enim. Doloribus, numquam. Maiores iure temporibus, necessitatibus voluptates inventore sed optio!</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
-                                <span className="text-orange-500 text-3xl">
+                                <span className="text-orange text-3xl">
                                     <GiRuleBook />
                                 </span>
                                 <div>
-                                    <h6 className="text-xl font-semibold text-gray-800 mb-2">Get Instant Tour Bookings</h6>
-                                    <p className="text-g">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem laborum voluptatum tempora placeat. Accusantium est in dolor maiores. Cumque voluptatem aspernatur voluptates amet porro praesentium quidem ducimus asperiores aperiam?</p>
+                                    <h6 className="text-xl font-semibold text-orange mb-2">Get Instant Tour Bookings</h6>
+                                    <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem laborum voluptatum tempora placeat. Accusantium est in dolor maiores. Cumque voluptatem aspernatur voluptates amet porro praesentium quidem ducimus asperiores aperiam?</p>
                                 </div>
                             </div>
                         </div>
@@ -99,8 +89,8 @@ const Benefit = () => {
                 </div>
             </div>
 
-            <div className="bg-gray-100 py-16 lg:py-24">
-                <div className="container mx-auto px-4">
+            <div className="py-16 lg:py-24 flex justify-center">
+                <div className="max-w-[1200px] w-full">
                     <Carousel
                         partialVisbile={false}
                         swipeable={true}
