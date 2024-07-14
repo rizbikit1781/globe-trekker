@@ -103,10 +103,10 @@ const Benefit = () => {
                         keyBoardControl={true}
                         itemClass="carouselItem px-4"
                     >  
-                        <Card image="/ape.png" text="Things to See and Do When Visiting Japan" />
-                        <Card image="/ape2.png" text="A Place where Start New Life with Peace" />
-                        <Card image="/ape3.png" text="Journeys are Best Measured with Friends" />
-                        <Card image="/ape4.png" text="Travel the Most Beautiful Places in the World" />
+                        <Card image="src/assets/tourist-1.jpg" text="Things to See and Do When Visiting Japan" />
+                        <Card image="src/assets/tourist-2.jpg" text="A Place where Start New Life with Peace" />
+                        <Card image="src/assets/tourist-3.jpg" text="Journeys are Best Measured with Friends" />
+                        <Card image="src/assets/tourist-4.jpg" text="Travel the Most Beautiful Places in the World" />
                     </Carousel>
                 </div>
             </div>
