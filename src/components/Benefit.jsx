@@ -89,7 +89,9 @@ const Benefit = () => {
                 </div>
             </div>
 
-            <div className="py-16 lg:py-24 flex justify-center">
+            <div className="py-16 lg:py-24 flex justify-center flex-col items-center">
+                <p className="text-orange text-xl pb-2">From the block post</p>
+                <h4 className="text-[40px] font-bold mb-8">News & Articles</h4>
                 <div className="max-w-[1200px] w-full">
                     <Carousel
                         partialVisbile={false}
