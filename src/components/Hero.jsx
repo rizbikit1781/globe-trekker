@@ -29,7 +29,7 @@ const Hero = () => {
   }
 
   return (
-    <div className='relative bg-black lg:h-[80vh]' data-aos="fade-down" data-aos-delay="300" data-aos-duration="3000">
+    <div className='relative bg-black lg:h-[80vh]' data-aos="fade-down" data-aos-delay="300" data-aos-duration="3000" id="home">
         <video autoPlay muted loop className="absolute z-10 w-full h-full lg:top-0 -top-[12vh] object-cover opacity-55" >
             <source src="/video.webm" type="video/webm" />
         </video>

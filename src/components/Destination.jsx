@@ -96,7 +96,7 @@ const Destination = () => {
   }
 
   return (
-    <div className="lg:mt-60 mt-10" data-aos="fade-down">
+    <div className="lg:mt-60 mt-10" data-aos="fade-down" id="destination">
       <div className="max-w-[1200px] px-6 mx-auto text-center">
         <p className="text-orange text-xl">Destination Lists</p>
         <h4 className="font-bold lg:text-[50px] text-[30px] py-4">Go exotic places</h4>
@@ -150,7 +150,7 @@ const Destination = () => {
         </div>
       </div>
 
-      <div className="text-center my-10 px-6" data-aos="fade-down">
+      <div className="text-center my-10 px-6" data-aos="fade-down" id="popular_tours">
         <p className="text-orange text-xl pb-2">Featured tours</p>
         <h4 className="lg:text-[50px] text-[30px] font-bold mb-6">Most popular tours</h4>
         <div>

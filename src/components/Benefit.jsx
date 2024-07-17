@@ -89,7 +89,7 @@ const Benefit = () => {
                 </div>
             </div>
 
-            <div className="py-16 lg:py-24 flex justify-center flex-col items-center">
+            <div className="py-16 lg:py-24 flex justify-center flex-col items-center" id="news">
                 <p className="text-orange text-xl pb-2">From the block post</p>
                 <h4 className="text-[40px] font-bold mb-8">News & Articles</h4>
                 <div className="max-w-[1200px] w-full">
@@ -113,7 +113,7 @@ const Benefit = () => {
                 </div>
             </div>
             
-            <div className="bg-[#faf5ee] py-16 lg:py-12" data-aos="fade-down">
+            <div className="bg-[#faf5ee] py-16 lg:py-12" data-aos="fade-down" id="contact">
                 <div className="container">
                     <div className="flex flex-wrap max-w-[1200px] xl:px-0 px-6 mx-auto lg:pt-20 pt-14">
                         <div className="lg:w-1/2 mb-8 lg:mb-0">
@@ -130,7 +130,7 @@ const Benefit = () => {
                             </div>
                         </div>
                         <div className="lg:w-1/2 flex justify-center">
-                            <img src="/logo.png" alt="Logo" className="w-64 h-64 object-contain" />
+                            <img src="/globe_logo.png" alt="Logo" className="w-64 h-64 object-contain" />
                         </div>
                     </div>
                 </div>

@@ -45,7 +45,7 @@ const Review = () => {
         
 
   return (
-    <div>
+    <div id="reviews">
         <div data-aos="fade-up">
             <div className="bg-yellow-50 bg-contain bg-bottom bg-no-repeat relative z-10">
                 <div className="max-w-[1200px] xl:px-0 px-6 mx-auto text-center pt-16">

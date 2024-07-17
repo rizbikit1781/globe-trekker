@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#313041] py-16 bg-contain">
         <div className="text-[#a9a8b6] flex lg:flex-nowrap flex-wrap justify-between max-w-[1200px] xl:px-0 px-6 mx-auto gap-10">
             <div className="lg:w-1/3">
-                <img src="/logo.png" width={40} height={40} alt="" className="mb-2" />
+                <img src="/globe_logo.png" width={100} height={100} alt="" className="mb-2" />
                 <p>
                     Welcome to our Trip and Tour Agency. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
